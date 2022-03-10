@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, useSpring } from 'framer-motion';
 
-import { images } from '../../constants'
+import { AppWrap } from '../../wrapper'
 import './About.scss';
 import {urlFor, client} from '../../client'
 
@@ -17,10 +17,7 @@ const About = () => {
         setAbouts(data)})
    
   }, [])
-
-
   
-
   return (
     <>
       <h2 className='head-text'>I Know That
@@ -49,4 +46,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AppWrap(About,'about')
