@@ -20,12 +20,12 @@ const About = () => {
   
   return (
     <>
-      <h2 className='head-text'>I Know That
+      <h2 className='head-text'>Sé que
       
-      <span>Good Apps</span>
+      <span> Buenas Apps</span>
       <br />
-      means
-      <span>Good Business</span>
+      significa
+      <span> Buenos Negocios</span>
       </h2>
 
       <div className="app__profiles">
@@ -46,4 +46,4 @@ const About = () => {
   )
 }
 
-export default AppWrap(MotionWrap(About,'app__about'),'about','app__whitebg')
+export default AppWrap(MotionWrap(About,'app__about'),'Sobre mi','app__whitebg')

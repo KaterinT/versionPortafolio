@@ -41,11 +41,11 @@ const Work = () => {
 
   return (
     <>
-      <h2 className='head-text'>My Creative
-        <span>Portafolio</span>
+      <h2 className='head-text'>Mi 
+        <span> Portafolio</span> creativo
         <br />
-        Section
-        <span>Good Business</span>
+        {/* Sección de 
+        <span> Buenos negocios</span> */}
       </h2>
 
       <div className="app__work-filter">
@@ -115,4 +115,4 @@ const Work = () => {
   )
 }
 
-export default AppWrap(MotionWrap(Work,'app__works'),'work','app__primarybg')
+export default AppWrap(MotionWrap(Work,'app__works'),'Proyectos','app__primarybg')

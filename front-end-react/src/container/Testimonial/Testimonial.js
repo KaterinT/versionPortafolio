@@ -32,6 +32,14 @@ const Testimonial = () => {
     <>
       {testimonials.length && (
         <>
+
+          <h2 className='head-text'> 
+            Testimonios
+            <br />
+            <br />
+            {/* Sección de 
+            <span> Buenos negocios</span> */}
+          </h2>
           <div className="app__testimonial-item app__flex">
             <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
             <div className="app__testimonial-content">
@@ -72,6 +80,6 @@ const Testimonial = () => {
 
 export default AppWrap(
   MotionWrap(Testimonial, 'app__testimonial'),
-  'testimonial',
+  'Testimonio',
   'app__primarybg',
 );
