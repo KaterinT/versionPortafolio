@@ -18,6 +18,7 @@ const Work = () => {
     const query = '*[_type == "works"]'
     client.fetch(query)
     .then((data) =>{
+      console.log(data);
       setWorks(data);
       setFilterWork(data)
     } )
@@ -38,7 +39,7 @@ const Work = () => {
       }
     },500)
   }
-
+  console.log(filterWork)
   return (
     <>
       <h2 className='head-text'>Mi 
@@ -49,7 +50,7 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {['UI/UX','Web App','Mobile App','React JS','All'].map((item,index)=> (
+        {['Node JS','Web','App','React JS','All'].map((item,index)=> (
           <div
             key={index}
             onClick={()=> handleWorkFilter(item)}
@@ -64,8 +65,9 @@ const Work = () => {
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren:0.5}}
         className='app__work-portfolio'
-      >
+      >;
         {filterWork.map((work, index) => (
+          
           <div className='app__work-item app__flex' key={index}>
             <div className='app__work-img app__flex'>
               <img src={urlFor(work.imgUrl)} alt={work.name} />
