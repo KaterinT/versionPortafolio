@@ -11,7 +11,9 @@ import javascript from '../assets/javascript.png';
 import sass from '../assets/sass.png';
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png'
+import correo from '../assets/correoIcon.png'
+import wtspIcon from '../assets/wtspIcon.png'
 
 export default {
-  logo,profile,profile2,profile3,circle,flutter,redux,sass,email, mobile,logo2,react2, javascript
+  logo,profile,profile2,profile3,circle,flutter,redux,sass,email, mobile,logo2,react2, javascript,correo,wtspIcon
 }

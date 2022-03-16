@@ -43,32 +43,32 @@ const Footer = () => {
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
-          <img src={images.email} alt="email" />
+          <img src={images.correo} alt="email" />
           <a href="mailto:tellourakaterin@gmail.com" className="p-text">tellourakaterin@gmail.com</a>
         </div>
         <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
+          <img src={images.wtspIcon} alt="phone" />
           <a href="https://walink.co/bd6b67" target="_blank" className="p-text">+51 972-198-713</a>
         </div>
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+            <input className="p-text" type="text" placeholder="Nombre" name="username" value={username} onChange={handleChangeInput} />
           </div>
           <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+            <input className="p-text" type="email" placeholder="Email" name="email" value={email} onChange={handleChangeInput} />
           </div>
           <div>
             <textarea
               className="p-text"
-              placeholder="Your Message"
+              placeholder="Mensaje"
               value={message}
               name="message"
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Enviar Mensaje' : 'Cargando...'}</button>
         </div>
       ) : (
         <div>
