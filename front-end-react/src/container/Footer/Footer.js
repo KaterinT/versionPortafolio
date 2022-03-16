@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
+import  { SocialMediaButton } from '../../components';
 import './Footer.scss';
 
 const Footer = () => {
@@ -37,16 +38,17 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">Contáctame</h2>
+      < SocialMediaButton/>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="kate:tellourakaterin@gmail.com" className="p-text">tellourakaterin@gmail.com</a>
+          <a href="mailto:tellourakaterin@gmail.com" className="p-text">tellourakaterin@gmail.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+51 972-198-713" className="p-text">+51 972-198-713</a>
+          <a href="https://walink.co/bd6b67" target="_blank" className="p-text">+51 972-198-713</a>
         </div>
       </div>
       {!isFormSubmitted ? (
@@ -81,6 +83,6 @@ const Footer = () => {
 
 export default AppWrap(
   MotionWrap(Footer, 'app__footer'),
-  'Contacto',
+  'Contáctame',
   'app__whitebg',
 );

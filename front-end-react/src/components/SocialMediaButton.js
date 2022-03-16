@@ -1,8 +1,8 @@
 import { BsTwitter, BsInstagram,BsLinkedin,BsGithub} from 'react-icons/bs'
 
-const SocialMedia = () => {
+const SocialMediaButton = () => {
   return (
-    <div className='app__social'>
+    <div className='app__socialButton'>
        <div>
         <a href="https://github.com/KaterinT" target="_blank">
           <BsGithub />
@@ -27,4 +27,4 @@ const SocialMedia = () => {
   )
 }
 
-export default SocialMedia
+export default SocialMediaButton

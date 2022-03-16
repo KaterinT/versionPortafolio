@@ -9,7 +9,7 @@ import './Work.scss';
 
 const Work = () => {
 
-  const [activeFilter, setActiveFilter] = useState('All')
+  const [activeFilter, setActiveFilter] = useState('Destacados')
   const [animateCard, setAnimateCard] = useState({ y:0, opacity:1 })
   const [works, setWorks] = useState([])
   const [filterWork, setFilterWork] = useState([])
@@ -20,7 +20,7 @@ const Work = () => {
     .then((data) =>{
       console.log(data);
       setWorks(data);
-      setFilterWork(data)
+      setFilterWork(data.filter((work) => work.tags.includes('Destacados')))
     } )
   }, [])
   
@@ -50,7 +50,7 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {['Node JS','Web','App','React JS','All'].map((item,index)=> (
+        {['Node JS','Web','App','React JS','All','Destacados'].map((item,index)=> (
           <div
             key={index}
             onClick={()=> handleWorkFilter(item)}
