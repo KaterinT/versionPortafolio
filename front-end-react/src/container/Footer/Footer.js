@@ -46,6 +46,7 @@ const Footer = () => {
     emailjs.sendForm('service_59bbf3n', 'template_ns87cgo', form.current, '5z1mRB_K2jrqDmT8G')
       .then((result) => {
           console.log(result.text);
+          setEnviado("Enviado! Gracias!")
       }, (error) => {
           console.log(error.text);
       });
@@ -101,7 +102,7 @@ const Footer = () => {
           </h3>
         </div>
       )} */}
-        <form className="app__footer-form app__flex" ref={form} onSubmit={sendEmail}>
+        <form className="app__footer-form app__flex" ref={form} onSubmit={sendEmail} >
           <div className="app__flex">
             <input className="p-text" type="text" placeholder="Nombre" name="name" required />
           </div>
@@ -117,6 +118,11 @@ const Footer = () => {
           </div>
           <button type="submit" className="p-text"> Enviar Mensaje</button>
         </form>
+        <div>
+          <h3 className="head-text">
+            {enviado}
+          </h3>
+        </div>
     </>
   );
 };
