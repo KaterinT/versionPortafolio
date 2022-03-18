@@ -82,6 +82,8 @@
   color: var(--gray-color);
   line-height: 1.5;
 
+  text-align: justify;
+
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem;
   }
@@ -92,6 +94,8 @@
   font-weight: 800;
   color: var(--black-color);
   text-align: left;
+
+  text-align: center;
 
   @media screen and (min-width: 2000px) {
     font-size: 2rem;

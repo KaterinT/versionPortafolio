@@ -77,7 +77,8 @@
 
 .app__work-img {
   width: 100%;
-  height: 230px;
+  // height: 230px;
+  height: 141px;
 
   position: relative;
  
@@ -88,6 +89,8 @@
     border-radius: 0.5rem;
     // object-fit: cover;
     object-fit: contain;
+
+    background: currentColor;
   }
 
   @media screen and (min-width:2000px) {
@@ -137,7 +140,8 @@
   flex-direction: column;
 
   h4 {
-    margin-top: 1rem;
+    // margin-top: 1.28rem;
+        margin-top: 3.28rem;
     line-height: 1.5;
 
     @media screen and (min-width: 2000px) {
@@ -149,9 +153,10 @@
     position: absolute;
 
     padding: 0.5rem 1rem;
-    border-radius: 10px;
+    // border-radius: 10px;
     background-color: #fff;
-    top: -25px;
+    // top: -25px;
+    top:-1px;
   }
 }
 
