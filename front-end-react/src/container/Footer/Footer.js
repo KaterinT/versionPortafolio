@@ -18,7 +18,7 @@ const Footer = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_59bbf3n', 'template_ns87cgo', form.current, '5z1mRB_K2jrqDmT8G')
+    emailjs.sendForm('service_59bbf3n', 'template_xkzsgvp', form.current, '5z1mRB_K2jrqDmT8G')
       .then((result) => {
           console.log(result.text);
           setEnviado("Enviado! Gracias!")
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-card">
           <img src={images.wtspIcon} alt="phone" />
-          <a href="https://api.whatssap.com/send?phone=+51972198713" target="_blank" className="p-text" rel="noreferrer">+51 972-198-713</a>
+          <a href="https://api.whatsapp.com/send?phone=+51972198713" target="_blank" className="p-text" rel="noreferrer">+51 972-198-713</a>
         </div>
       </div>
         <form className="app__footer-form app__flex" ref={form} onSubmit={sendEmail} >
