@@ -16,12 +16,15 @@
 :root {
   --font-base: "DM Sans",sans-serif;
   --primary-color: #1B1A17;
-  --secondary-color: #F0A500;
-  --black-color: #E45826;
-  --lightGray-color: #E6D5B8;
-  --gray-color: #F0A500;
+  --secondary-color: #daffe7;
+  --black-color: #19ffa0;
+  --lightGray-color: hsl(38, 48%, 81%);
+  --gray-color: #2f9a6d;
   --brown-color: #3f2744;
   --white-color: #fff;
+  --green-black:#1b2320;
+  --color-gradiende: linear-gradient(90deg, rgba(238,255,212,1) 0%, rgba(93,255,212,1) 50%, rgba(43,240,115,1) 100%);
+  --color-gradiende-2: linear-gradient(90deg, rgba(239,244,240,1) 0%, rgba(101,233,193,1) 35%, rgba(205,251,215,0.9388349089635855) 100%);
 }
 
 * {

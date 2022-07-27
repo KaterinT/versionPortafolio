@@ -9,8 +9,8 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
         <Component />
 
         <div className="copyright">
-          <p className='p-text'>@2022 KATERIN</p>
-          <p className='p-text'>Todos los derechos reservados </p>
+          <p className='p-text'>«La Innovación es lo que distingue a los líderes de los seguidores» (Steve Jobs)</p>
+          <p className='p-text'></p>
         </div>  
       </div>
       <NavigationDots active={idName} />

@@ -55,7 +55,7 @@
   p {
     // font-size: 1.25rem;
     // line-height: 2rem;
-    color: var(--black-color);
+    color: var(#364d45);
     font-family: var(--font-base);
 
     font-size: 1rem;
@@ -70,7 +70,7 @@
 
   h4 {
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--gray-color);
     margin-top: 2rem;
   }
 
@@ -102,7 +102,7 @@
     svg {
       width: 20px;
       height: 20px;
-      color: var(--secondary-color);
+      color: var(--green-black);
     }
 
     &:hover {
