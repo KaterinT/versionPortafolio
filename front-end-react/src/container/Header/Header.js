@@ -1,8 +1,10 @@
 import {motion} from 'framer-motion';
 
-import {AppWrap} from '../../wrapper'
-import {images} from '../../constants'
+import {AppWrap} from '../../wrapper';
+import {images} from '../../constants';
 import './Header.scss';
+import { useLottie } from 'lottie-react';
+import animationsPerfil from "../../constants/animations-perfil.json";
 
 const scaleVariants = {
   whileInView:{
@@ -15,6 +17,14 @@ const scaleVariants = {
   }
 }
 const Header = () => {
+
+  const options = {
+    animationData: animationsPerfil,
+    loop: true
+  };
+
+  const { View } = useLottie(options);
+
   return (
     <div className='app__header app__flex'>
       <motion.div
@@ -36,9 +46,12 @@ const Header = () => {
             {/* <p className='p-text'>Web Developer</p> */}
           </div>
 
-          <div className="tag-cmp app__flex">
-            <span className="icons">👩‍💻👾⚡</span>
-            {/* <p className='p-text'>Web Developer</p> */}
+          <div className="tag-cmp app__flex app__flex-ref-cv">
+          <a className='a-ref-cv' href='cv-katerin-tello.pdf' download='cv-katerin-tello.pdf'>
+            <p className='p-text'>Descarga mi CV<span className="icons">👩‍💻👾⚡</span></p>
+          </a>
+         
+            {/* <p className='p-text'>Web Developer</p> */} 
           </div>
         </div>
 
@@ -54,10 +67,14 @@ const Header = () => {
           whileInView={{ scale:[0, 1]}}
           transition={{ duration:1, ease: 'easeInOut' }}
           src={images.circle}
+          // src={container}
           alt="profile_circle" 
           className='overlay_circle'
         />
       </motion.div>
+      <div className='view-image'>
+      { View } 
+      </div>
 
       <motion.div
         variant={scaleVariants}
